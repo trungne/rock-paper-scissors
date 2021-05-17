@@ -66,8 +66,17 @@ function displayMessage(playerChoice, computerChoice, displayTo, result){
         displayTo.innerText = 'WTF?';
         return;
     }
-    displayTo.innerText += `
-    ${capitalizeFirstLetter(playerChoice)} beats ${capitalizeFirstLetter(computerChoice)}`;
+
+    if (result === 'win'){
+        displayTo.innerText += `
+        ${capitalizeFirstLetter(playerChoice)} beats ${capitalizeFirstLetter(computerChoice)}`;
+    }
+    else if (result === 'loss'){
+        displayTo.innerText += `
+        ${capitalizeFirstLetter(computerChoice)} beats ${capitalizeFirstLetter(playerChoice)}`;
+    }
+    
+    
 }
 
 function capitalizeFirstLetter(string) {
