@@ -1,0 +1,22 @@
+.instruction {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+.choices button {
+    background-color: antiquewhite;
+    width: 20%;
+    height: 50px;
+    font-size: 30px;
+}
+.choices {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#result {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
